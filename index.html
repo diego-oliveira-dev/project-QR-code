@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>QR code component</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    body, html {
+      width: 100vw;
+      height: 100vh;
+      background-color: hsl(212, 45%, 89%);
+      font-family: 'Outfit', sans-serif;
+    }
+
+    main {
+      width: 100vw;
+      height: 100vh; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    section#card {
+      background-color: white;
+      width: 300px;
+      height: 520px;
+      padding: 18px;
+      border-radius: 20px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.071);
+    }
+
+    section#card > div#image {
+      display: block;
+      background: black url(images/image-qr-code.png) no-repeat;
+      background-size: cover;
+      background-position: center center;
+      height: 60%;
+      border-radius: 10px;
+    }
+
+    div#text {
+      width: 93%;
+      height: 40%;
+      margin: auto;
+      display: block;
+      text-align: center;
+    }
+
+    div#text > h1 {
+      margin-top: 25px;
+      margin-bottom: 17px;
+      color:  hsl(218, 44%, 22%);
+    }
+
+    div#text > p {
+      color: hsl(220, 15%, 55%);
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section id="card">
+      <div id="image">
+      </div>
+      <div id="text">
+        <h1>Improve your front-end skills by building projects</h1>
+        <p>Scan the QR code to visit Frontend Mentor and tanke your coding skills to the next level</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
